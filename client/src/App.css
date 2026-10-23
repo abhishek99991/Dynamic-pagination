@@ -1,0 +1,41 @@
+.page-shell { min-height: 100vh; padding: 44px 22px; }
+.dashboard { width: min(1120px, 100%); margin: 0 auto; background: #fff; border: 1px solid #e7eaf1; border-radius: 20px; box-shadow: 0 16px 50px rgba(31, 41, 55, .06); padding: 34px; }
+.page-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-bottom: 28px; }
+.eyebrow { margin: 0 0 9px; color: #6366f1; font-size: 11px; font-weight: 800; letter-spacing: .16em; }
+h1 { margin: 0; color: #111827; font-size: clamp(28px, 4vw, 38px); letter-spacing: -.04em; }
+.subtitle { color: #778196; margin: 8px 0 0; font-size: 14px; }
+.total-card { display: grid; gap: 5px; min-width: 130px; padding: 15px 19px; background: #f5f5ff; border: 1px solid #e7e7ff; border-radius: 14px; }
+.total-card span { color: #777b99; font-size: 12px; }
+.total-card strong { color: #4f46e5; font-size: 27px; }
+.toolbar { display: flex; align-items: end; justify-content: space-between; gap: 18px; padding: 20px 0; border-top: 1px solid #edf0f5; border-bottom: 1px solid #edf0f5; }
+.page-size-control { display: grid; gap: 8px; }
+.page-size-control label { color: #525d70; font-size: 12px; font-weight: 700; }
+.page-size-control select { min-width: 170px; padding: 10px 35px 10px 12px; color: #253047; background: #fff; border: 1px solid #dce1eb; border-radius: 9px; cursor: pointer; }
+.saved-note { display: flex; align-items: center; gap: 8px; margin: 0 0 10px; color: #7c8799; font-size: 12px; }
+.saved-dot { width: 7px; height: 7px; border-radius: 50%; background: #10b981; }
+.table-wrap { width: 100%; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; white-space: nowrap; }
+thead { background: #fafbfe; }
+th { padding: 15px 16px; color: #8a93a4; font-size: 10px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+td { padding: 16px; border-bottom: 1px solid #eef0f5; color: #657084; font-size: 13px; }
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:hover { background: #fbfcff; }
+.expense-name { display: flex; align-items: center; gap: 11px; color: #263247; font-weight: 650; }
+.expense-icon { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; color: #6366f1; background: #f0f0ff; font-weight: 800; }
+.category-pill { display: inline-block; padding: 5px 9px; color: #5b6475; background: #f3f5f9; border-radius: 7px; font-size: 11px; }
+.amount-cell { text-align: right; color: #263247; font-weight: 750; }
+.pagination-footer { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding-top: 24px; }
+.range-text { margin: 0; color: #8992a2; font-size: 12px; }
+.range-text strong { color: #4b5567; }
+.pagination { display: flex; align-items: center; gap: 7px; }
+.page-button { min-width: 36px; height: 36px; padding: 0 10px; border: 1px solid #e0e5ef; border-radius: 8px; background: #fff; color: #48546a; cursor: pointer; font-size: 12px; }
+.page-button:not(:disabled):hover { border-color: #a5a6f6; color: #4f46e5; background: #f7f7ff; }
+.page-button:disabled { color: #c1c7d2; background: #fafbfc; cursor: not-allowed; }
+.page-indicator { padding: 0 7px; color: #7e8798; font-size: 12px; white-space: nowrap; }
+.page-indicator strong { color: #30394c; }
+.footer-note { margin: 25px 0 0; padding-top: 17px; border-top: 1px solid #f0f2f6; color: #a0a8b6; font-size: 11px; }
+.message-state { padding: 55px 20px; text-align: center; color: #788397; font-size: 14px; }
+.error-state { color: #b42318; }
+.error-state p { color: #788397; }
+.secondary-button { padding: 9px 14px; border: 1px solid #dce1eb; border-radius: 8px; background: white; cursor: pointer; }
+@media (max-width: 700px) { .page-shell { padding: 15px 10px; } .dashboard { padding: 20px 14px; border-radius: 14px; } .page-header { align-items: flex-start; } .total-card { min-width: auto; padding: 11px; } .total-card strong { font-size: 22px; } .toolbar { align-items: flex-start; flex-direction: column; } .saved-note { margin-bottom: 0; } .pagination-footer { align-items: flex-start; flex-direction: column; } .pagination { max-width: 100%; flex-wrap: wrap; } .page-indicator { padding: 0 3px; } th, td { padding: 12px 10px; } }
